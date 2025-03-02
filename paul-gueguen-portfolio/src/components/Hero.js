@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { motion } from 'framer-motion';
-import { FaLinkedin, FaGithub, FaTwitter } from 'react-icons/fa';
+import { FaLinkedin, FaGithub, FaGraduationCap  } from 'react-icons/fa';
 
 const HeroSection = styled.section`
   display: flex;
@@ -82,8 +82,8 @@ function Hero() {
         <a href="https://github.com/p-gueguen" target="_blank" rel="noopener noreferrer">
           <FaGithub />
         </a>
-        <a href="https://twitter.com/octupls" target="_blank" rel="noopener noreferrer">
-          <FaTwitter />
+        <a href="https://scholar.google.fr/citations?user=srVHy-MAAAAJ&hl=fr" target="_blank" rel="noopener noreferrer">
+          <FaGraduationCap  icon="fa-brands fa-google-scholar" />
         </a>
       </SocialIcons>
     </HeroSection>

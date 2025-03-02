@@ -59,7 +59,7 @@ function About() {
           viewport={{ once: true }}
         >
           <p>
-            I'm a computational biologist focusing on the immune system with over six years of 
+            I'm a computational biologist focusing on the immune system with over seven years of 
             experience in single-cell genomics. Currently, I'm working on single-cell and spatial 
             biology at the Functional Genomics Center Zurich (FGCZ) at ETH Zurich.
           </p>

@@ -44,8 +44,8 @@ function Footer() {
           <SocialLink href="https://github.com/p-gueguen" target="_blank" rel="noopener noreferrer">
             GitHub
           </SocialLink>
-          <SocialLink href="https://twitter.com/octupls" target="_blank" rel="noopener noreferrer">
-            Twitter
+          <SocialLink href="https://scholar.google.fr/citations?user=srVHy-MAAAAJ&hl=fr" target="_blank" rel="noopener noreferrer">
+            Scholar
           </SocialLink>
         </SocialLinks>
       </FooterContent>

@@ -51,13 +51,12 @@ const SkillTag = styled(motion.div)`
 
 function Skills() {
   const skills = [
-    'Single cell atlas',
-    'Human cell atlas',
+    'scRNA-seq', 'Spatial Transcriptomics','Immunology',"Cancer Biology",'Dermatology',
+    'Cell atlases',
     'Xenium',
-    'R programming',
+    'R programming','Python',
     'GitHub',
-    'scRNA-seq analysis',
-    'Seurat',
+    'Nextflow',
     'ggplot',
     'Bash scripting',
     'HPC cluster computing'

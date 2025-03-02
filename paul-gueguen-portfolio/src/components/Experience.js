@@ -100,7 +100,7 @@ function Experience() {
   const experiences = [
     {
       position: 'left',
-      title: 'Bioinformatician',
+      title: 'Bioinformatics Scientist',
       company: 'ETH Zürich',
       date: 'Jan 2024 - Present',
       description: 'Working on single-cell and spatial biology at FGCZ.',
@@ -111,7 +111,7 @@ function Experience() {
       title: 'Postdoctoral Research Scientist',
       company: 'Université de Lausanne',
       date: 'Apr 2022 - Apr 2023',
-      description: 'Conducted research in computational biology and immunology.',
+      description: 'Conducted research in cancer immunology.',
       icon: '🧬'
     },
     {
@@ -119,7 +119,7 @@ function Experience() {
       title: 'Computational Biologist',
       company: 'Mnemo Therapeutics',
       date: 'May 2021 - Apr 2022',
-      description: 'Developed computational methods for immunotherapeutics.',
+      description: 'Developed computational methods for pre-clinical CAR-T cells.',
       icon: '💻'
     },
     {
