@@ -168,44 +168,44 @@ function Publications() {
       title: "Contribution of resident and circulating precursors to tumor-infiltrating CD8+ T cell populations in lung cancer",
       journal: "Science Immunology",
       year: 2021,
-      authors: "Gueguen P, et al.",
-      imageUrl: `${process.env.PUBLIC_URL}/images/sci-immunol-plot.jpg`,
+      authors: "Gueguen P, Metoikidou C, Dupic T et al.",
+      imageUrl: `/images/sci-immunol-plot.jpg`,
       link: "https://www.science.org/doi/abs/10.1126/sciimmunol.abd5778"
     },
     {
       id: 2,
-      title: "Lipid-Associated Macrophages Are Induced by Cancer and Promote Tumor Progression",
+      title: "Lipid-associated macrophages are induced by cancer-associated fibroblasts and mediate immune suppression in breast cancer",
       journal: "Cancer Research",
       year: 2022,
-      authors: "Cruz AF, Gueguen P, et al.",
-      imageUrl: `${process.env.PUBLIC_URL}/images/cancer-research-plot.jpg`,
+      authors: "Timperi E, Gueguen P et al.",
+      imageUrl: `/images/cancer-research-plot.jpg`,
       link: "https://aacrjournals.org/cancerres/article/82/18/3291/709018/Lipid-Associated-Macrophages-Are-Induced-by-Cancer"
     },
     {
       id: 3,
-      title: "SUV39H1 Ablation Enhances Long-term CAR T-cell Functionality by Restraining Chromatin Compaction",
+      title: "SUV39H1 Ablation Enhances Long-term CAR T Function in Solid Tumors",
       journal: "Cancer Discovery",
       year: 2024,
-      authors: "Boutet J, Gueguen P, et al.",
-      imageUrl: `${process.env.PUBLIC_URL}/images/car-t-plot.jpg`,
+      authors: "López-Cobo S, Fuentealba JR, Gueguen P et al.",
+      imageUrl: `/images/car-t-plot.jpg`,
       link: "https://aacrjournals.org/cancerdiscovery/article-abstract/14/1/120/732570/SUV39H1-Ablation-Enhances-Long-term-CAR-T-"
     },
     {
       id: 4,
-      title: "Lipid-associated Macrophage Isolation from Mouse Tumor and Metastatic Organs",
+      title: "T cell clonal analysis using single-cell RNA sequencing and reference maps",
       journal: "Bio-protocol",
       year: 2023,
-      authors: "Cruz AF, Gueguen P, et al.",
-      imageUrl: `${process.env.PUBLIC_URL}/images/bio-protocol-plot.jpg`,
+      authors: "Andreatta M, Gueguen P, Borcherding N, Carmona SJ",
+      imageUrl: `/images/bio-protocol-plot.jpg`,
       link: "https://en-cdn.bio-protocol.org/pdf/bio-protocol4735.pdf?rel_link=YmlvLXByb3RvY29sLm9yZy9lbi9icGRldGFpbD9pZD00NzM1JnR5cGU9MA=="
     },
     {
       id: 5,
-      title: "Single-cell analysis of T cell metabolism during early activation reveals dynamic metabolic programs",
+      title: "Tumor-infiltrating CD8+ T cell differentiation paths at the single-cell level",
       journal: "PhD Thesis - Université Paris Cité",
       year: 2021,
       authors: "Gueguen P",
-      imageUrl: `${process.env.PUBLIC_URL}/images/phd-thesis-plot.jpg`,
+      imageUrl: `/images/phd-thesis-plot.jpg`,
       link: "https://hal.science/tel-03647185/"
     },
     {
@@ -213,11 +213,12 @@ function Publications() {
       title: "The epigenetic control of stemness in CD8+ T cell fate commitment",
       journal: "Science",
       year: 2018,
-      authors: "Henning AN, Roychoudhuri R, Restifo NP",
-      imageUrl: `${process.env.PUBLIC_URL}/images/science-2018-plot.jpg`,
+      authors: "Pace L, Goudot C, Zueva E, Gueguen P, et al.",
+      imageUrl: `/images/science-2018-plot.jpg`,
       link: "https://www.science.org/doi/full/10.1126/science.aah6499"
     }
   ];
+
 
   // Sort publications based on year
   const sortedPublications = [...publications].sort((a, b) => {
