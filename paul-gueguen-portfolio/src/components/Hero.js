@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { motion } from 'framer-motion';
-import { FaLinkedin, FaGithub, FaGraduationCap  } from 'react-icons/fa';
+import { FaLinkedin, FaGithub, FaGraduationCap } from 'react-icons/fa';
 
 const HeroSection = styled.section`
   display: flex;
@@ -10,9 +10,33 @@ const HeroSection = styled.section`
   justify-content: center;
   min-height: 60vh;
   padding: 2rem;
-  background: linear-gradient(135deg, ${props => props.theme.colors.primary} 0%, ${props => props.theme.colors.secondary} 100%);
+  position: relative;
   color: ${props => props.theme.colors.light};
   text-align: center;
+  
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('/images/hero.jpg');
+    background-size: cover;
+    background-position: center;
+    z-index: -2;
+  }
+  
+  &::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Adjust opacity as needed */
+    z-index: -1;
+  }
   
   @media (min-width: ${props => props.theme.breakpoints.md}) {
     padding: 4rem;
@@ -20,8 +44,11 @@ const HeroSection = styled.section`
 `;
 
 const Title = styled(motion.h1)`
+  font-family: 'Lexend Deca', sans-serif;
+  font-weight: 200;
   font-size: 3rem;
   margin-bottom: 1rem;
+  letter-spacing: 0.02em;
   
   @media (min-width: ${props => props.theme.breakpoints.md}) {
     font-size: 4rem;
@@ -83,7 +110,7 @@ function Hero() {
           <FaGithub />
         </a>
         <a href="https://scholar.google.fr/citations?user=srVHy-MAAAAJ&hl=fr" target="_blank" rel="noopener noreferrer">
-          <FaGraduationCap  icon="fa-brands fa-google-scholar" />
+          <FaGraduationCap />
         </a>
       </SocialIcons>
     </HeroSection>
