@@ -82,11 +82,11 @@ function About() {
           <p>
             I specialize in analyzing scRNA-seq, scATAC-seq, and spatial transcriptomics datasets (Xenium, Visium)
             using R/Seurat v5 and Python/scanpy, with expertise in cell type annotation, batch correction,
-            pseudotime analysis, and cell-cell communication inference. I'm passionate about leveraging
+            pseudotime analysis, and cell-cell communication inference. I'm passionate about leveraging{' '}
             <strong>modern AI tools</strong> to accelerate scientific discovery and improve reproducibility.
           </p>
           <p>
-            I actively mentor graduate students in computational biology and have developed comprehensive
+            I actively mentor graduate students in computational biology and have developed comprehensive{' '}
             <strong>training programs</strong> for single-cell RNA-seq and spatial transcriptomics analysis at ETH Zurich.
             My teaching focuses on reproducible workflows, best practices in bioinformatics, and practical skills
             for tackling real-world genomics challenges.
