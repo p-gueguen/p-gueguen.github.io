@@ -69,27 +69,13 @@ function About() {
           viewport={{ once: true }}
         >
           <p>
-            I'm a computational biologist specializing in <strong>single-cell and spatial transcriptomics</strong> at
-            the Functional Genomics Center Zurich (FGCZ) at ETH Zurich. With over eight years of experience,
-            I focus on understanding complex cellular interactions in the immune system and tumor microenvironment.
+            I'm a computational biologist at <strong>ETH Zurich (FGCZ)</strong> with over eight years of experience in{' '}
+            <strong>single-cell and spatial transcriptomics</strong>. I develop analytical workflows, automated pipelines,
+            and <strong>AI-powered tools</strong> for large-scale genomics projects.
           </p>
           <p>
-            My work involves developing <strong>analytical workflows and bioinformatics infrastructure</strong> for
-            large-scale genomics projects. I build automated pipelines for processing multi-modal single-cell data,
-            create interactive data visualization platforms, and develop <strong>AI-powered tools</strong> including
-            custom Claude Code skills and MCP servers for workflow automation.
-          </p>
-          <p>
-            I specialize in analyzing scRNA-seq, scATAC-seq, and spatial transcriptomics datasets (Xenium, Visium)
-            using R/Seurat v5 and Python/scanpy, with expertise in cell type annotation, batch correction,
-            pseudotime analysis, and cell-cell communication inference. I'm passionate about leveraging{' '}
-            <strong>modern AI tools</strong> to accelerate scientific discovery and improve reproducibility.
-          </p>
-          <p>
-            I actively mentor graduate students in computational biology and have developed comprehensive{' '}
-            <strong>training programs</strong> for single-cell RNA-seq and spatial transcriptomics analysis at ETH Zurich.
-            My teaching focuses on reproducible workflows, best practices in bioinformatics, and practical skills
-            for tackling real-world genomics challenges.
+            I specialize in scRNA-seq, scATAC-seq, and spatial transcriptomics (Xenium, Visium) using R/Seurat and Python/scanpy.
+            I also mentor graduate students and lead <strong>training programs</strong> in computational biology at ETH Zurich.
           </p>
         </AboutText>
       </AboutContent>

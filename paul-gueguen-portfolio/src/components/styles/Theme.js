@@ -15,7 +15,7 @@ export const theme = {
     gradients: {
       primary: 'linear-gradient(135deg, #7c3aed 0%, #3b82f6 100%)',
       card: 'linear-gradient(135deg, rgba(124, 58, 237, 0.1) 0%, rgba(59, 130, 246, 0.1) 100%)',
-      hero: 'linear-gradient(135deg, rgba(124, 58, 237, 0.65) 0%, rgba(90, 40, 180, 0.55) 100%)',
+      hero: 'linear-gradient(135deg, rgba(100, 50, 220, 0.75) 0%, rgba(60, 80, 200, 0.70) 100%)',
     },
     fonts: {
       heading: "'Space Grotesk', sans-serif",
