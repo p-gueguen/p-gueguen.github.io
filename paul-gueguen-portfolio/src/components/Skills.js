@@ -97,16 +97,16 @@ function Skills() {
       title: "Single-Cell & Spatial Methods",
       skills: ['scRNA-seq', 'scATAC-seq', 'scTCR-seq', 'Spatial transcriptomics', 'Xenium, Visium & VisiumHD',
                'Cell segmentation', 'H&E image analysis', 'Cell type annotation', 'Batch correction',
-               'CytoTRACE2', 'NicheNet & CellChat']
+               'NicheNet & CellChat']
     },
     {
       title: "Infrastructure & DevOps",
       skills: ['HPC/SLURM clusters', 'CellRanger pipelines',
-               'Nextflow/nf-core', 'Docker containers', 'CI/CD workflows']
+               'Nextflow/nf-core', 'Docker containers', 'GitHub & GitLab', 'CI/CD workflows']
     },
     {
       title: "AI Tooling & Automation",
-      skills: ['Claude Code development', 'MCP server creation', 'Custom skills/agents',
+      skills: ['Machine learning', 'Claude Code development', 'MCP server creation', 'Custom skills/agents',
                'Prompt engineering', 'Workflow automation']
     },
     {
