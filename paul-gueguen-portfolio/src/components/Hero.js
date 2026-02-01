@@ -45,8 +45,8 @@ const HeroSection = styled.section`
 `;
 
 const Title = styled(motion.h1)`
-  font-family: 'Inter', sans-serif;
-  font-weight: 500;
+  font-family: ${props => props.theme.fonts.heading};
+  font-weight: 700;
   font-size: 3.5rem;
   margin-bottom: 1rem;
   letter-spacing: 0.02em;
