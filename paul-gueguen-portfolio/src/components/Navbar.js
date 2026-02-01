@@ -5,7 +5,6 @@ import { FaEnvelope } from 'react-icons/fa';
 const Nav = styled.nav`
   background: ${props => props.theme.colors.dark};
   border-bottom: 1px solid ${props => props.theme.colors.border};
-  backdrop-filter: blur(10px);
   position: sticky;
   top: 0;
   z-index: 100;
