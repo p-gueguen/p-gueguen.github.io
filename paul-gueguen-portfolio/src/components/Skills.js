@@ -95,14 +95,15 @@ function Skills() {
     },
     {
       title: "Single-Cell & Spatial Methods",
-      skills: ['scRNA-seq', 'scATAC-seq', 'scTCR-seq', 'Spatial transcriptomics', 'Xenium, Visium & VisiumHD',
+      skills: ['scRNA-seq', 'scATAC-seq', 'scTCR-seq', 'CITE-seq', 'Multiome (ATAC+GEX)',
+               'Spatial transcriptomics', 'Xenium, Visium & VisiumHD',
                'Cell segmentation', 'H&E image analysis', 'Cell type annotation', 'Batch correction',
                'NicheNet & CellChat']
     },
     {
       title: "Infrastructure & DevOps",
-      skills: ['HPC/SLURM clusters', 'CellRanger pipelines',
-               'Nextflow/nf-core', 'Docker containers', 'GitHub & GitLab', 'CI/CD workflows']
+      skills: ['HPC/SLURM clusters', 'Cloud (AWS/GCP)', 'CellRanger pipelines',
+               'Nextflow/nf-core', 'Docker containers', 'Conda/Mamba/Pixi', 'GitHub & GitLab', 'CI/CD workflows']
     },
     {
       title: "AI Tooling & Automation",
@@ -111,7 +112,7 @@ function Skills() {
     },
     {
       title: "Visualization & Reporting",
-      skills: ['ggplot2', 'R Markdown', 'Shiny apps', 'Interactive dashboards']
+      skills: ['ggplot2', 'R Markdown', 'Quarto', 'Shiny apps', 'Interactive dashboards']
     }
   ];
 
