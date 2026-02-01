@@ -70,7 +70,7 @@ function About() {
         >
           <p>
             I'm a computational biologist specializing in <strong>single-cell and spatial transcriptomics</strong> at
-            the Functional Genomics Center Zurich (FGCZ) at ETH Zurich. With over seven years of experience,
+            the Functional Genomics Center Zurich (FGCZ) at ETH Zurich. With over eight years of experience,
             I focus on understanding complex cellular interactions in the immune system and tumor microenvironment.
           </p>
           <p>
