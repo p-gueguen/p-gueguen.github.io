@@ -36,7 +36,7 @@ const SkillsGrid = styled.div`
   margin-top: 2rem;
 `;
 
-const SkillCategory = styled(motion.div)`
+const SkillCategory = styled.div`
   background: ${props => props.theme.gradients.card};
   background-color: ${props => props.theme.colors.surface};
   border: 1px solid ${props => props.theme.colors.border};
@@ -91,7 +91,7 @@ function Skills() {
   const skillCategories = [
     {
       title: "Languages & Programming",
-      skills: ['R (Seurat v5)', 'Python (scanpy)', 'Bash/Shell', 'JavaScript', 'TypeScript']
+      skills: ['R (Seurat v5)', 'Python (scanpy)', 'Bash/Shell', 'SQL', 'JavaScript', 'TypeScript']
     },
     {
       title: "Single-Cell & Spatial Methods",
@@ -111,7 +111,7 @@ function Skills() {
     },
     {
       title: "Visualization & Reporting",
-      skills: ['ggplot2', 'ComplexHeatmap', 'R Markdown', 'Shiny apps', 'Interactive dashboards']
+      skills: ['ggplot2', 'R Markdown', 'Shiny apps', 'Interactive dashboards']
     }
   ];
 
@@ -120,13 +120,7 @@ function Skills() {
       <SectionTitle>Skills & Expertise</SectionTitle>
       <SkillsGrid>
         {skillCategories.map((category, catIndex) => (
-          <SkillCategory
-            key={catIndex}
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.4, delay: catIndex * 0.1 }}
-            viewport={{ once: true }}
-          >
+          <SkillCategory key={catIndex}>
             <CategoryTitle>{category.title}</CategoryTitle>
             <SkillsContainer>
               {category.skills.map((skill, skillIndex) => (
