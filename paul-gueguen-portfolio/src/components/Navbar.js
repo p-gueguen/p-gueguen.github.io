@@ -3,11 +3,13 @@ import styled from 'styled-components';
 import { FaEnvelope } from 'react-icons/fa';
 
 const Nav = styled.nav`
-  background-color: ${props => props.theme.colors.dark};
+  background: ${props => props.theme.colors.dark};
+  border-bottom: 1px solid ${props => props.theme.colors.border};
+  backdrop-filter: blur(10px);
   position: sticky;
   top: 0;
   z-index: 100;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
 `;
 
 const NavContainer = styled.div`
@@ -23,7 +25,14 @@ const Logo = styled.a`
   color: ${props => props.theme.colors.light};
   font-size: 1.5rem;
   font-weight: 700;
+  font-family: ${props => props.theme.fonts.heading};
   text-decoration: none;
+  transition: all 0.3s ease;
+
+  &:hover {
+    color: ${props => props.theme.colors.accent};
+    text-shadow: 0 0 10px rgba(34, 211, 238, 0.5);
+  }
 `;
 
 const MenuButton = styled.button`
@@ -33,7 +42,7 @@ const MenuButton = styled.button`
   color: ${props => props.theme.colors.light};
   font-size: 1.5rem;
   cursor: pointer;
-  
+
   @media (max-width: ${props => props.theme.breakpoints.md}) {
     display: block;
   }
@@ -44,14 +53,16 @@ const NavLinks = styled.ul`
   list-style: none;
   margin: 0;
   padding: 0;
-  
+
   @media (max-width: ${props => props.theme.breakpoints.md}) {
     flex-direction: column;
     position: absolute;
     top: 100%;
     left: 0;
     right: 0;
-    background-color: ${props => props.theme.colors.dark};
+    background: ${props => props.theme.colors.dark};
+    border-bottom: 1px solid ${props => props.theme.colors.border};
+    backdrop-filter: blur(10px);
     padding: 1rem 0;
     display: ${props => props.isOpen ? 'flex' : 'none'};
   }
@@ -59,19 +70,25 @@ const NavLinks = styled.ul`
 
 const NavItem = styled.li`
   margin: 0 1rem;
-  
+
   @media (max-width: ${props => props.theme.breakpoints.md}) {
     margin: 0.5rem 2rem;
   }
 `;
 
 const NavLink = styled.a`
-  color: ${props => props.theme.colors.light};
+  color: ${props => props.theme.colors.text};
   text-decoration: none;
-  transition: color 0.3s ease;
-  
+  font-weight: 500;
+  transition: all 0.3s ease;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  display: inline-block;
+
   &:hover {
-    color: ${props => props.theme.colors.primary};
+    color: ${props => props.theme.colors.accent};
+    background: ${props => props.theme.colors.surface};
+    box-shadow: 0 0 10px rgba(34, 211, 238, 0.2);
   }
 `;
 
@@ -83,7 +100,7 @@ const EmailLink = styled(NavLink)`
 
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
-  
+
   return (
     <Nav>
       <NavContainer>
@@ -102,8 +119,11 @@ function Navbar() {
             <NavLink href="#skills" onClick={() => setIsOpen(false)}>Skills</NavLink>
           </NavItem>
           <NavItem>
+            <NavLink href="#publications" onClick={() => setIsOpen(false)}>Publications</NavLink>
+          </NavItem>
+          <NavItem>
             <EmailLink href="mailto:paul.gueguen@fgcz.ethz.ch" onClick={() => setIsOpen(false)}>
-              <FaEnvelope /> Email
+              <FaEnvelope /> Contact
             </EmailLink>
           </NavItem>
         </NavLinks>

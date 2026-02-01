@@ -33,15 +33,20 @@ const PublicationsGrid = styled.div`
 `;
 
 const PublicationCard = styled.div`
-  background-color: ${props => props.theme.colors.light};
-  border-radius: 8px;
+  background: ${props => props.theme.gradients.card};
+  background-color: ${props => props.theme.colors.surface};
+  border-radius: 12px;
   overflow: hidden;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  
+  border: 1px solid ${props => props.theme.colors.border};
+  backdrop-filter: blur(10px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+
   &:hover {
     transform: translateY(-5px);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 0 30px rgba(34, 211, 238, 0.4), 0 10px 20px rgba(0, 0, 0, 0.4);
+    border-color: ${props => props.theme.colors.accent};
+    background-color: ${props => props.theme.colors.surfaceHover};
   }
 `;
 
@@ -96,24 +101,26 @@ const PublicationInfo = styled.div`
 const PublicationTitle = styled.h3`
   margin-top: 0;
   margin-bottom: 0.5rem;
-  color: ${props => props.theme.colors.primary};
+  color: ${props => props.theme.colors.text};
   font-size: 1.25rem;
+  font-family: ${props => props.theme.fonts.heading};
 `;
 
 const PublicationJournal = styled.div`
   font-style: italic;
-  color: ${props => props.theme.colors.gray};
+  color: ${props => props.theme.colors.textSecondary};
   margin-bottom: 0.75rem;
   font-size: 0.9rem;
 `;
 
 const PublicationYear = styled.div`
-  background-color: ${props => props.theme.colors.primary};
+  background: ${props => props.theme.gradients.primary};
   color: white;
   display: inline-block;
-  padding: 0.25rem 0.5rem;
-  border-radius: 4px;
+  padding: 0.25rem 0.75rem;
+  border-radius: 6px;
   font-size: 0.8rem;
+  font-weight: 600;
   margin-bottom: 0.75rem;
 `;
 
@@ -121,18 +128,20 @@ const PublicationAuthors = styled.div`
   font-size: 0.9rem;
   margin-bottom: 1rem;
   line-height: 1.4;
+  color: ${props => props.theme.colors.textSecondary};
 `;
 
 const PublicationLink = styled.a`
   display: inline-block;
-  color: ${props => props.theme.colors.primary};
+  color: ${props => props.theme.colors.accent};
   text-decoration: none;
   font-weight: 500;
-  transition: color 0.3s ease;
-  
+  transition: all 0.3s ease;
+
   &:hover {
     color: ${props => props.theme.colors.secondary};
     text-decoration: underline;
+    text-shadow: 0 0 8px rgba(34, 211, 238, 0.5);
   }
 `;
 
@@ -145,17 +154,21 @@ const SortControls = styled.div`
 `;
 
 const SortButton = styled.button`
-  background: ${props => props.active ? props.theme.colors.primary : 'transparent'};
+  background: ${props => props.active ? props.theme.gradients.primary : 'transparent'};
   color: ${props => props.active ? 'white' : props.theme.colors.text};
-  border: 1px solid ${props => props.theme.colors.primary};
+  border: 1px solid ${props => props.active ? 'transparent' : props.theme.colors.border};
   padding: 0.5rem 1rem;
   margin-left: 0.5rem;
-  border-radius: 4px;
+  border-radius: 6px;
   cursor: pointer;
+  font-family: ${props => props.theme.fonts.body};
+  font-weight: 500;
   transition: all 0.3s ease;
-  
+
   &:hover {
-    background: ${props => props.active ? props.theme.colors.primary : props.theme.colors.primary + '22'};
+    background: ${props => props.active ? props.theme.gradients.primary : props.theme.colors.surface};
+    border-color: ${props => props.theme.colors.accent};
+    box-shadow: 0 0 10px rgba(34, 211, 238, 0.3);
   }
 `;
 
@@ -216,6 +229,24 @@ function Publications() {
       authors: "Pace L, Goudot C, Zueva E, Gueguen P, et al.",
       imageUrl: `/images/science-2018-plot.jpg`,
       link: "https://www.science.org/doi/full/10.1126/science.aah6499"
+    },
+    {
+      id: 7,
+      title: "Semi-supervised integration of single-cell transcriptomics data",
+      journal: "Nature Communications",
+      year: 2024,
+      authors: "Andreatta M, Hérault L, Gueguen P, Carmona SJ, et al.",
+      imageUrl: `/images/nature-comms-stacas-plot.jpg`,
+      link: "https://www.nature.com/articles/s41467-024-45240-z"
+    },
+    {
+      id: 8,
+      title: "EBV induces CNS homing of B cells attracting inflammatory T cells",
+      journal: "Nature",
+      year: 2025,
+      authors: "Läderach F, Piteros I, Fennell É, Bremer E, Last M, Schmid S, Rieble L, Campbell C, Ludwig-Portugall I, Bornemann L, Gruhl A, Eulitz K, Gueguen P, et al.",
+      imageUrl: `/images/nature-ebv-plot.jpg`,
+      link: "https://www.nature.com/articles/s41586-025-09378-0"
     }
   ];
 

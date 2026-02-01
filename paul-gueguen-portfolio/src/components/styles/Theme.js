@@ -1,15 +1,26 @@
 export const theme = {
     colors: {
-      primary: '#c2864e',     // Updated blue
-      secondary: '#1e3a8a',   // Darker blue
-      background: '#f8fafc',  // Light background
-      text: '#1e293b',        // Dark text
+      primary: '#7c3aed',        // Rich purple
+      secondary: '#3b82f6',      // Electric blue
+      accent: '#22d3ee',         // Bright cyan
+      background: '#0f1629',     // Deep dark blue
+      surface: '#1a1f3a',        // Card backgrounds
+      surfaceHover: '#242d4d',   // Card hover state
+      text: '#f1f5f9',           // Light text
+      textSecondary: '#94a3b8',  // Muted text
+      border: 'rgba(255, 255, 255, 0.1)',
       light: '#ffffff',
-      dark: '#0f172a',
-      accent: '#38bdf8'       // Light blue accent
+      dark: '#0a0f1e',           // Even darker for navbar/footer
+    },
+    gradients: {
+      primary: 'linear-gradient(135deg, #7c3aed 0%, #3b82f6 100%)',
+      card: 'linear-gradient(135deg, rgba(124, 58, 237, 0.1) 0%, rgba(59, 130, 246, 0.1) 100%)',
+      hero: 'linear-gradient(135deg, rgba(124, 58, 237, 0.85) 0%, rgba(59, 130, 246, 0.85) 100%)',
     },
     fonts: {
-      main: "'Inter', sans-serif",
+      heading: "'Space Grotesk', sans-serif",
+      body: "'DM Sans', sans-serif",
+      main: "'DM Sans', sans-serif", // Keep for backwards compatibility
     },
     breakpoints: {
       sm: '576px',
