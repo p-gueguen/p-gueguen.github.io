@@ -45,11 +45,11 @@ const HeroSection = styled.section`
 `;
 
 const Title = styled(motion.h1)`
-  font-family: 'Lexend Giga', sans-serif;
-  font-weight: 800;
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
   font-size: 3.5rem;
   margin-bottom: 1rem;
-  letter-spacing: 0.08em;
+  letter-spacing: 0.02em;
   text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(255, 255, 255, 0.3);
 
   @media (min-width: ${props => props.theme.breakpoints.md}) {
