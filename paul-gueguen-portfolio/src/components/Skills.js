@@ -95,7 +95,7 @@ function Skills() {
     },
     {
       title: "Single-Cell & Spatial Methods",
-      skills: ['scRNA-seq', 'scATAC-seq', 'Spatial transcriptomics', 'Xenium & Visium',
+      skills: ['scRNA-seq', 'scATAC-seq', 'scTCR-seq', 'Spatial transcriptomics', 'Xenium & Visium',
                'Cell type annotation', 'Batch correction', 'CytoTRACE2',
                'NicheNet & CellChat']
     },
