@@ -151,7 +151,7 @@ function Experience() {
       title: 'Ph.D. Candidate',
       company: 'Institut Curie',
       date: 'Aug 2017 - Mar 2021',
-      description: 'Thesis on tumor-infiltrating CD8+ T cell differentiation using single-cell genomics and spatial transcriptomics.',
+      description: 'Thesis on tumor-infiltrating CD8+ T cell differentiation using single-cell genomics.',
       icon: '🎓'
     },
   ];
