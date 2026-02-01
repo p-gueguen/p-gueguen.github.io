@@ -91,22 +91,27 @@ function Skills() {
   const skillCategories = [
     {
       title: "Languages & Programming",
-      skills: ['R (Seurat v5, ezRun)', 'Python (scanpy)', 'Bash/Shell']
+      skills: ['R (Seurat v5)', 'Python (scanpy)', 'Bash/Shell', 'JavaScript', 'TypeScript']
     },
     {
       title: "Single-Cell & Spatial Methods",
       skills: ['scRNA-seq', 'scATAC-seq', 'Spatial transcriptomics', 'Xenium & Visium',
-               'Cell type annotation', 'STACAS batch correction', 'CytoTRACE2',
+               'Cell type annotation', 'Batch correction', 'CytoTRACE2',
                'NicheNet & CellChat']
     },
     {
-      title: "Infrastructure & Platforms",
-      skills: ['FGCZ (B-Fabric, SUSHI)', 'HPC/SLURM clusters', 'CellRanger pipelines',
-               'Nextflow/nf-core', 'Docker containers', 'gStore management']
+      title: "Infrastructure & DevOps",
+      skills: ['HPC/SLURM clusters', 'CellRanger pipelines',
+               'Nextflow/nf-core', 'Docker containers', 'CI/CD workflows']
+    },
+    {
+      title: "AI Tooling & Automation",
+      skills: ['Claude Code development', 'MCP server creation', 'Custom skills/agents',
+               'Prompt engineering', 'Workflow automation']
     },
     {
       title: "Visualization & Reporting",
-      skills: ['ggplot2', 'ComplexHeatmap', 'R Markdown', 'Shiny apps', 'exploreSC']
+      skills: ['ggplot2', 'ComplexHeatmap', 'R Markdown', 'Shiny apps', 'Interactive dashboards']
     }
   ];
 

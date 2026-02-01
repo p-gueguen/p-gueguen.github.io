@@ -74,15 +74,16 @@ function About() {
             I focus on understanding complex cellular interactions in the immune system and tumor microenvironment.
           </p>
           <p>
-            My work involves developing analytical workflows and infrastructure for <strong>FGCZ's bioinformatics platform</strong>,
-            including contributions to B-Fabric, SUSHI, and ezRun. I've co-developed <strong>STACAS</strong>, a
-            semi-supervised batch correction method for single-cell data integration that preserves biological
-            variability while removing technical artifacts.
+            My work involves developing <strong>analytical workflows and bioinformatics infrastructure</strong> for
+            large-scale genomics projects. I build automated pipelines for processing multi-modal single-cell data,
+            create interactive data visualization platforms, and develop <strong>AI-powered tools</strong> including
+            custom Claude Code skills and MCP servers for workflow automation.
           </p>
           <p>
             I specialize in analyzing scRNA-seq, scATAC-seq, and spatial transcriptomics datasets (Xenium, Visium)
-            using R/Seurat v5, with expertise in cell type annotation, pseudotime analysis, and cell-cell
-            communication inference.
+            using R/Seurat v5 and Python/scanpy, with expertise in cell type annotation, batch correction,
+            pseudotime analysis, and cell-cell communication inference. I'm passionate about leveraging
+            <strong>modern AI tools</strong> to accelerate scientific discovery and improve reproducibility.
           </p>
         </AboutText>
       </AboutContent>

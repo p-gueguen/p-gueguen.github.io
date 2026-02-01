@@ -236,7 +236,7 @@ function Publications() {
       journal: "Nature Communications",
       year: 2024,
       authors: "Andreatta M, Hérault L, Gueguen P, Carmona SJ, et al.",
-      imageUrl: `/images/nature-comms-stacas-plot.jpg`,
+      imageUrl: `/images/cd8_map.webp`,
       link: "https://www.nature.com/articles/s41467-024-45240-z"
     },
     {
@@ -245,7 +245,7 @@ function Publications() {
       journal: "Nature",
       year: 2025,
       authors: "Läderach F, Piteros I, Fennell É, Bremer E, Last M, Schmid S, Rieble L, Campbell C, Ludwig-Portugall I, Bornemann L, Gruhl A, Eulitz K, Gueguen P, et al.",
-      imageUrl: `/images/nature-ebv-plot.jpg`,
+      imageUrl: `/images/ebv.webp`,
       link: "https://www.nature.com/articles/s41586-025-09378-0"
     }
   ];
