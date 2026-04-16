@@ -1,1 +1,438 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"/><link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🫧</text></svg>"><meta name="viewport" content="width=device-width,initial-scale=1"/><meta name="theme-color" content="#5D4AF0"/><meta name="description" content="Computational biologist specializing in single-cell genomics and spatial transcriptomics at ETH Zurich FGCZ"/><link rel="apple-touch-icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🫧</text></svg>"><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet"><link rel="manifest" href="/manifest.json"/><title>Paul Gueguen | Bioinformatics & Single-Cell Genomics</title><script defer="defer" src="/static/js/main.2237fde7.js"></script><link href="/static/css/main.e6c13ad2.css" rel="stylesheet"></head><body><noscript>You need to enable JavaScript to run this app.</noscript><div id="root"></div></body></html>
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Paul Gueguen</title>
+<meta name="description" content="Paul Gueguen — computational biologist at the Functional Genomics Center Zurich. Single-cell and spatial transcriptomics.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🧬</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg:        #faf8f4;
+    --ink:       #1a1a1a;
+    --muted:     #6b6b68;
+    --rule:      #e6e2d9;
+    --paper:     #f2ede3;
+    --accent:    #8a3b2e;
+    --max:       720px;
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    font-size: 17px;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  ::selection { background: var(--ink); color: var(--bg); }
+
+  .wrap { max-width: var(--max); margin: 0 auto; padding: 0 1.5rem; }
+  .wide { max-width: 980px; margin: 0 auto; padding: 0 1.5rem; }
+
+  header.masthead {
+    padding: 4rem 0 2rem;
+    border-bottom: 1px solid var(--rule);
+    margin-bottom: 3rem;
+  }
+  header.masthead .wrap { display: flex; flex-direction: column; gap: 0.5rem; }
+
+  h1.name {
+    font-family: 'Fraunces', Georgia, serif;
+    font-weight: 500;
+    font-size: clamp(2.4rem, 5vw, 3.2rem);
+    letter-spacing: -0.02em;
+    line-height: 1.05;
+    margin: 0;
+  }
+  .role {
+    color: var(--muted);
+    font-size: 1rem;
+    margin: 0;
+  }
+  .role a { color: var(--muted); }
+
+  nav.top {
+    margin-top: 1.25rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.25rem;
+    font-size: 0.95rem;
+  }
+  nav.top a {
+    color: var(--ink);
+    text-decoration: none;
+    border-bottom: 1px solid var(--rule);
+    padding-bottom: 1px;
+    transition: border-color .15s ease;
+  }
+  nav.top a:hover { border-bottom-color: var(--ink); }
+
+  section { padding: 2.5rem 0; }
+  section + section { border-top: 1px solid var(--rule); }
+
+  h2 {
+    font-family: 'Fraunces', Georgia, serif;
+    font-weight: 500;
+    font-size: 1.35rem;
+    letter-spacing: -0.01em;
+    margin: 0 0 1.5rem;
+    color: var(--ink);
+  }
+  h2 .n {
+    display: inline-block;
+    color: var(--muted);
+    font-family: 'Inter', sans-serif;
+    font-size: 0.7rem;
+    font-weight: 500;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    margin-right: 0.75rem;
+    vertical-align: middle;
+  }
+
+  p { margin: 0 0 1rem; }
+  p:last-child { margin-bottom: 0; }
+
+  a { color: var(--ink); text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 3px; text-decoration-color: var(--rule); }
+  a:hover { text-decoration-color: var(--accent); color: var(--accent); }
+
+  .lede { font-size: 1.1rem; color: var(--ink); }
+  .lede em { font-style: normal; color: var(--accent); }
+
+  /* Tools section */
+  .tool {
+    padding: 1.5rem 0;
+    border-top: 1px dashed var(--rule);
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 0.5rem 2rem;
+    align-items: baseline;
+  }
+  .tool:first-of-type { border-top: 0; padding-top: 0.25rem; }
+  .tool h3 {
+    margin: 0;
+    font-family: 'Fraunces', Georgia, serif;
+    font-weight: 500;
+    font-size: 1.15rem;
+  }
+  .tool h3 a {
+    text-decoration: none;
+    border-bottom: 1px solid var(--rule);
+    padding-bottom: 2px;
+  }
+  .tool h3 a:hover { border-bottom-color: var(--accent); }
+  .tool .meta {
+    font-family: 'Inter', sans-serif;
+    font-size: 0.8rem;
+    color: var(--muted);
+    letter-spacing: 0.02em;
+    white-space: nowrap;
+  }
+  .tool p { grid-column: 1 / -1; color: var(--ink); margin: 0.25rem 0 0; }
+  .tool .tags {
+    grid-column: 1 / -1;
+    margin-top: 0.6rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+  }
+  .tag {
+    font-size: 0.72rem;
+    letter-spacing: 0.04em;
+    padding: 0.15rem 0.5rem;
+    border: 1px solid var(--rule);
+    border-radius: 2px;
+    color: var(--muted);
+    background: var(--paper);
+  }
+
+  /* Publications */
+  .pubs {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 1.75rem;
+    margin-top: 0.5rem;
+  }
+  .pub { display: flex; flex-direction: column; }
+  .pub a.thumb {
+    display: block;
+    aspect-ratio: 4 / 3;
+    overflow: hidden;
+    border: 1px solid var(--rule);
+    background: var(--paper);
+    text-decoration: none;
+  }
+  .pub a.thumb img {
+    width: 100%; height: 100%;
+    object-fit: cover;
+    display: block;
+    filter: saturate(0.92);
+    transition: transform .4s ease, filter .3s ease;
+  }
+  .pub a.thumb:hover img { transform: scale(1.02); filter: saturate(1); }
+  .pub .y {
+    font-family: 'Inter', sans-serif;
+    font-size: 0.75rem;
+    letter-spacing: 0.08em;
+    color: var(--muted);
+    margin-top: 0.8rem;
+    text-transform: uppercase;
+  }
+  .pub h4 {
+    font-family: 'Fraunces', Georgia, serif;
+    font-weight: 500;
+    font-size: 1.02rem;
+    line-height: 1.35;
+    margin: 0.35rem 0 0.25rem;
+    letter-spacing: -0.005em;
+  }
+  .pub h4 a { text-decoration: none; border-bottom: 1px solid var(--rule); }
+  .pub h4 a:hover { border-bottom-color: var(--accent); }
+  .pub .j { color: var(--muted); font-size: 0.88rem; font-style: italic; margin: 0 0 0.15rem; }
+  .pub .a { color: var(--muted); font-size: 0.85rem; line-height: 1.4; margin: 0; }
+  .pub .a .me { color: var(--ink); font-weight: 500; }
+
+  /* Experience */
+  .cv { list-style: none; padding: 0; margin: 0; }
+  .cv li {
+    display: grid;
+    grid-template-columns: 9rem 1fr;
+    gap: 1.5rem;
+    padding: 0.85rem 0;
+    border-top: 1px dashed var(--rule);
+  }
+  .cv li:first-child { border-top: 0; }
+  .cv .when {
+    font-family: 'Inter', sans-serif;
+    font-size: 0.82rem;
+    color: var(--muted);
+    letter-spacing: 0.03em;
+    padding-top: 0.15rem;
+  }
+  .cv .what strong { font-weight: 600; }
+  .cv .what .where { color: var(--muted); }
+  .cv .what p { color: var(--muted); font-size: 0.92rem; margin: 0.15rem 0 0; }
+
+  footer {
+    margin-top: 3rem;
+    padding: 2rem 0 3rem;
+    border-top: 1px solid var(--rule);
+    color: var(--muted);
+    font-size: 0.88rem;
+  }
+  footer .wrap { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 1rem; }
+  footer a { color: var(--muted); }
+
+  @media (max-width: 560px) {
+    header.masthead { padding-top: 2.5rem; }
+    .tool { grid-template-columns: 1fr; }
+    .tool .meta { order: 2; }
+    .cv li { grid-template-columns: 1fr; gap: 0.25rem; }
+    .cv .when { font-size: 0.78rem; }
+  }
+</style>
+</head>
+<body>
+
+<header class="masthead">
+  <div class="wrap">
+    <h1 class="name">Paul Gueguen</h1>
+    <p class="role">Computational biologist at the <a href="https://fgcz.ch">Functional Genomics Center Zurich</a> (ETH / UZH).</p>
+    <nav class="top">
+      <a href="#work">Work</a>
+      <a href="#publications">Publications</a>
+      <a href="#cv">CV</a>
+      <a href="mailto:paul.gueguen@fgcz.ethz.ch">Email</a>
+      <a href="https://github.com/p-gueguen">GitHub</a>
+      <a href="https://scholar.google.fr/citations?user=srVHy-MAAAAJ&hl=fr">Scholar</a>
+      <a href="https://www.linkedin.com/in/paul-gueguen">LinkedIn</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+<section id="about">
+  <div class="wrap">
+    <p class="lede">
+      I work on <em>single-cell and spatial transcriptomics</em> &mdash; helping labs across ETH and UZH get from raw sequencing data to biology. My day-to-day is split between running analyses for collaborators, writing and maintaining shared infrastructure (B-Fabric, SUSHI, ezRun), and building open-source tools when the existing ones don&rsquo;t fit.
+    </p>
+    <p>
+      Before FGCZ I did a postdoc at UNIL on cancer immunology, a stint in industry at <a href="https://mnemo-tx.com/">Mnemo Therapeutics</a> on CAR-T, and a PhD at <a href="https://institut-curie.org/">Institut Curie</a> on tumor-infiltrating CD8 T cells. I like problems where the computational choices actually change the biological conclusion.
+    </p>
+  </div>
+</section>
+
+<section id="work">
+  <div class="wrap">
+    <h2><span class="n">01</span> Open-source work</h2>
+
+    <article class="tool">
+      <h3><a href="https://github.com/p-gueguen/rctd-py">rctd-py</a></h3>
+      <div class="meta">Python &middot; GPU &middot; ★ 29</div>
+      <p>
+        A PyTorch reimplementation of RCTD for deconvolving spatial transcriptomics spots (Visium, Xenium, MERFISH, Slide-seq) into cell-type proportions. Drop-in replacement for the R <code>spacexr</code> package, 4&ndash;40&times; faster on GPU with 99.7% concordance on benchmarks. Works on CPU when a GPU isn&rsquo;t available.
+      </p>
+      <div class="tags">
+        <span class="tag">Deconvolution</span>
+        <span class="tag">PyTorch</span>
+        <span class="tag">Visium / Xenium / MERFISH</span>
+      </div>
+    </article>
+
+    <article class="tool">
+      <h3><a href="https://github.com/p-gueguen/Spatial_transcriptomics_tools">Spatial_transcriptomics_tools</a></h3>
+      <div class="meta">Curated list &middot; ★ 139</div>
+      <p>
+        A curated, opinionated index of the spatial transcriptomics tooling landscape &mdash; segmentation, cell-type annotation, deconvolution, differential expression, benchmarks, datasets, foundation models. Started as my own working notes; now community-maintained with regular updates as the field moves.
+      </p>
+      <div class="tags">
+        <span class="tag">Survey</span>
+        <span class="tag">Segmentation</span>
+        <span class="tag">Benchmarks</span>
+        <span class="tag">Foundation models</span>
+      </div>
+    </article>
+
+    <article class="tool">
+      <h3><a href="https://github.com/p-gueguen/single_cell_NSCLC">single_cell_NSCLC</a></h3>
+      <div class="meta">Notebooks</div>
+      <p>
+        Reproducible analysis notebooks accompanying my <em>Science Immunology</em> paper on tumor-infiltrating CD8 T cells in non-small-cell lung cancer. End-to-end from count matrices to the figures in the paper.
+      </p>
+      <div class="tags">
+        <span class="tag">scRNA-seq</span>
+        <span class="tag">scTCR-seq</span>
+        <span class="tag">Reproducible</span>
+      </div>
+    </article>
+  </div>
+</section>
+
+<section id="publications">
+  <div class="wide">
+    <h2><span class="n">02</span> Selected publications</h2>
+    <div class="pubs">
+
+      <article class="pub">
+        <a class="thumb" href="https://www.nature.com/articles/s41586-025-09378-0"><img src="/images/ebv.webp" alt="EBV CNS homing figure" loading="lazy"></a>
+        <div class="y">2025 &middot; Nature</div>
+        <h4><a href="https://www.nature.com/articles/s41586-025-09378-0">EBV induces CNS homing of B cells attracting inflammatory T cells</a></h4>
+        <p class="a">Läderach F, Piteros I, Fennell É, … <span class="me">Gueguen P</span>, et&nbsp;al.</p>
+      </article>
+
+      <article class="pub">
+        <a class="thumb" href="https://aacrjournals.org/cancerdiscovery/article-abstract/14/1/120/732570/SUV39H1-Ablation-Enhances-Long-term-CAR-T-"><img src="/images/car-t-plot.jpg" alt="CAR-T figure" loading="lazy"></a>
+        <div class="y">2024 &middot; Cancer Discovery</div>
+        <h4><a href="https://aacrjournals.org/cancerdiscovery/article-abstract/14/1/120/732570/SUV39H1-Ablation-Enhances-Long-term-CAR-T-">SUV39H1 ablation enhances long-term CAR-T function in solid tumors</a></h4>
+        <p class="a">López-Cobo S, Fuentealba JR, <span class="me">Gueguen P</span>, et&nbsp;al.</p>
+      </article>
+
+      <article class="pub">
+        <a class="thumb" href="https://www.nature.com/articles/s41467-024-45240-z"><img src="/images/cd8_map.webp" alt="CD8 reference map" loading="lazy"></a>
+        <div class="y">2024 &middot; Nature Communications</div>
+        <h4><a href="https://www.nature.com/articles/s41467-024-45240-z">Semi-supervised integration of single-cell transcriptomics data</a></h4>
+        <p class="a">Andreatta M, Hérault L, <span class="me">Gueguen P</span>, Carmona SJ, et&nbsp;al.</p>
+      </article>
+
+      <article class="pub">
+        <a class="thumb" href="https://en-cdn.bio-protocol.org/pdf/bio-protocol4735.pdf?rel_link=YmlvLXByb3RvY29sLm9yZy9lbi9icGRldGFpbD9pZD00NzM1JnR5cGU9MA=="><img src="/images/bio-protocol-plot.jpg" alt="Bio-protocol figure" loading="lazy"></a>
+        <div class="y">2023 &middot; Bio-protocol</div>
+        <h4><a href="https://en-cdn.bio-protocol.org/pdf/bio-protocol4735.pdf?rel_link=YmlvLXByb3RvY29sLm9yZy9lbi9icGRldGFpbD9pZD00NzM1JnR5cGU9MA==">T-cell clonal analysis using single-cell RNA sequencing and reference maps</a></h4>
+        <p class="a">Andreatta M, <span class="me">Gueguen P</span>, Borcherding N, Carmona SJ.</p>
+      </article>
+
+      <article class="pub">
+        <a class="thumb" href="https://aacrjournals.org/cancerres/article/82/18/3291/709018/Lipid-Associated-Macrophages-Are-Induced-by-Cancer"><img src="/images/cancer-research-plot.jpg" alt="Cancer Research figure" loading="lazy"></a>
+        <div class="y">2022 &middot; Cancer Research</div>
+        <h4><a href="https://aacrjournals.org/cancerres/article/82/18/3291/709018/Lipid-Associated-Macrophages-Are-Induced-by-Cancer">Lipid-associated macrophages are induced by CAFs and mediate immune suppression in breast cancer</a></h4>
+        <p class="a">Timperi E, <span class="me">Gueguen P</span>, et&nbsp;al.</p>
+      </article>
+
+      <article class="pub">
+        <a class="thumb" href="https://www.science.org/doi/abs/10.1126/sciimmunol.abd5778"><img src="/images/sci-immunol-plot.jpg" alt="Science Immunology figure" loading="lazy"></a>
+        <div class="y">2021 &middot; Science Immunology</div>
+        <h4><a href="https://www.science.org/doi/abs/10.1126/sciimmunol.abd5778">Contribution of resident and circulating precursors to tumor-infiltrating CD8 T-cell populations in lung cancer</a></h4>
+        <p class="a"><span class="me">Gueguen P</span>, Metoikidou C, Dupic T, et&nbsp;al.</p>
+      </article>
+
+      <article class="pub">
+        <a class="thumb" href="https://hal.science/tel-03647185/"><img src="/images/phd-thesis-plot.jpg" alt="PhD thesis figure" loading="lazy"></a>
+        <div class="y">2021 &middot; PhD thesis</div>
+        <h4><a href="https://hal.science/tel-03647185/">Tumor-infiltrating CD8 T-cell differentiation paths at the single-cell level</a></h4>
+        <p class="a"><span class="me">Gueguen P</span>. Université Paris Cité.</p>
+      </article>
+
+      <article class="pub">
+        <a class="thumb" href="https://www.science.org/doi/full/10.1126/science.aah6499"><img src="/images/science-2018-plot.jpg" alt="Science 2018 figure" loading="lazy"></a>
+        <div class="y">2018 &middot; Science</div>
+        <h4><a href="https://www.science.org/doi/full/10.1126/science.aah6499">The epigenetic control of stemness in CD8 T-cell fate commitment</a></h4>
+        <p class="a">Pace L, Goudot C, Zueva E, <span class="me">Gueguen P</span>, et&nbsp;al.</p>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<section id="cv">
+  <div class="wrap">
+    <h2><span class="n">03</span> CV</h2>
+    <ul class="cv">
+      <li>
+        <div class="when">2024 &mdash;</div>
+        <div class="what">
+          <strong>Bioinformatics Scientist</strong><br>
+          <span class="where">Functional Genomics Center Zurich &middot; ETH / UZH</span>
+          <p>Single-cell and spatial analysis for collaborators; pipelines and infrastructure on B-Fabric, SUSHI, ezRun.</p>
+        </div>
+      </li>
+      <li>
+        <div class="when">2022 &ndash; 2023</div>
+        <div class="what">
+          <strong>Postdoctoral researcher</strong><br>
+          <span class="where">Université de Lausanne &middot; Carmona &amp; Held labs</span>
+          <p>Cancer immunology; reference maps for human tumor-infiltrating T cells.</p>
+        </div>
+      </li>
+      <li>
+        <div class="when">2021 &ndash; 2022</div>
+        <div class="what">
+          <strong>Computational biologist</strong><br>
+          <span class="where">Mnemo Therapeutics</span>
+          <p>Pre-clinical CAR-T analysis &mdash; scRNA-seq and TCR repertoire.</p>
+        </div>
+      </li>
+      <li>
+        <div class="when">2017 &ndash; 2021</div>
+        <div class="what">
+          <strong>PhD, Cancer Immunology</strong><br>
+          <span class="where">Institut Curie &middot; Amigorena lab &middot; Université Paris Cité</span>
+          <p>Single-cell dissection of CD8 T-cell states in human lung cancer.</p>
+        </div>
+      </li>
+    </ul>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>Zürich, Switzerland</span>
+    <span>
+      <a href="mailto:paul.gueguen@fgcz.ethz.ch">Email</a> &middot;
+      <a href="https://github.com/p-gueguen">GitHub</a> &middot;
+      <a href="https://scholar.google.fr/citations?user=srVHy-MAAAAJ&hl=fr">Scholar</a>
+    </span>
+  </div>
+</footer>
+
+</body>
+</html>
