@@ -84,7 +84,7 @@
   "@context": "https://schema.org",
   "@type": "SoftwareSourceCode",
   "name": "rctd-py",
-  "description": "GPU-accelerated Python reimplementation of RCTD for deconvolving spatial transcriptomics spots (Visium, Xenium, MERFISH, Slide-seq) into cell-type proportions. 4–40× faster than R spacexr with 99.7% concordance.",
+  "description": "GPU-accelerated Python reimplementation of RCTD for deconvolving spatial transcriptomics spots (Visium, Xenium, MERFISH, Slide-seq) into cell-type proportions. 10–57× faster than R spacexr on GPU, with the same calls as R wherever both pick the same sigma.",
   "codeRepository": "https://github.com/p-gueguen/rctd-py",
   "programmingLanguage": "Python",
   "runtimePlatform": "PyTorch",
@@ -369,9 +369,9 @@
 
     <article class="tool">
       <h3><a href="https://github.com/p-gueguen/rctd-py">rctd-py</a></h3>
-      <div class="meta">Python &middot; GPU &middot; ★ 29</div>
+      <div class="meta">Python &middot; GPU &middot; ★ 63</div>
       <p>
-        A PyTorch reimplementation of RCTD for deconvolving spatial transcriptomics spots (Visium, Xenium, MERFISH, Slide-seq) into cell-type proportions. Drop-in replacement for the R <code>spacexr</code> package, 4&ndash;40&times; faster on GPU with 99.7% concordance on benchmarks. Works on CPU when a GPU isn&rsquo;t available.
+        A PyTorch reimplementation of RCTD for deconvolving spatial transcriptomics spots (Visium, Xenium, MERFISH, Slide-seq) into cell-type proportions. Drop-in replacement for the R <code>spacexr</code> package, 10&ndash;57&times; faster on GPU across 19 benchmark datasets, with the same calls as R wherever both pick the same sigma (99.0&ndash;99.9% of spot classes otherwise). Works on CPU when a GPU isn&rsquo;t available.
       </p>
       <div class="tags">
         <span class="tag">Deconvolution</span>
@@ -382,7 +382,7 @@
 
     <article class="tool">
       <h3><a href="https://github.com/p-gueguen/Spatial_transcriptomics_tools">Spatial_transcriptomics_tools</a></h3>
-      <div class="meta">Curated list &middot; ★ 139</div>
+      <div class="meta">Curated list &middot; ★ 211</div>
       <p>
         A curated, opinionated index of the spatial transcriptomics tooling landscape &mdash; segmentation, cell-type annotation, deconvolution, differential expression, benchmarks, datasets, foundation models. Started as my own working notes; now community-maintained with regular updates as the field moves.
       </p>
