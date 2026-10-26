@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Paul Gueguen — Computational Biologist · Single-Cell &amp; Spatial Transcriptomics</title>
-<meta name="description" content="Paul Gueguen — computational biologist at the Functional Genomics Center Zurich (ETH / UZH). Single-cell and spatial transcriptomics; author of rctd-py (GPU-accelerated RCTD) and the curated Spatial_transcriptomics_tools list.">
+<title>Paul Gueguen — Bioinformatics Scientist · Single-Cell &amp; Spatial Transcriptomics</title>
+<meta name="description" content="Paul Gueguen — bioinformatics scientist at the Functional Genomics Center Zurich (ETH / UZH). Single-cell and spatial transcriptomics; author of rctd-py (GPU-accelerated RCTD) and the curated Spatial_transcriptomics_tools list.">
 <meta name="author" content="Paul Gueguen">
 <meta name="keywords" content="Paul Gueguen, computational biology, bioinformatics, single-cell RNA sequencing, scRNA-seq, spatial transcriptomics, RCTD, rctd-py, Visium, Xenium, MERFISH, Slide-seq, cell-type deconvolution, FGCZ, ETH Zurich, cancer immunology">
 <meta name="robots" content="index, follow, max-image-preview:large">
@@ -13,7 +13,7 @@
 
 <!-- Open Graph -->
 <meta property="og:type" content="profile">
-<meta property="og:title" content="Paul Gueguen — Computational Biologist">
+<meta property="og:title" content="Paul Gueguen — Bioinformatics Scientist">
 <meta property="og:description" content="Single-cell and spatial transcriptomics at the Functional Genomics Center Zurich. Author of rctd-py (GPU-accelerated RCTD) and Spatial_transcriptomics_tools.">
 <meta property="og:url" content="https://p-gueguen.github.io/">
 <meta property="og:site_name" content="Paul Gueguen">
@@ -25,7 +25,7 @@
 
 <!-- Twitter / X -->
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Paul Gueguen — Computational Biologist">
+<meta name="twitter:title" content="Paul Gueguen — Bioinformatics Scientist">
 <meta name="twitter:description" content="Single-cell and spatial transcriptomics at FGCZ (ETH / UZH). Author of rctd-py and Spatial_transcriptomics_tools.">
 <meta name="twitter:image" content="https://p-gueguen.github.io/images/cd8_map.webp">
 
@@ -38,14 +38,23 @@
 {
   "@context": "https://schema.org",
   "@type": "Person",
+  "@id": "https://p-gueguen.github.io/#person",
   "name": "Paul Gueguen",
+  "honorificPrefix": "Dr.",
   "givenName": "Paul",
   "familyName": "Gueguen",
   "url": "https://p-gueguen.github.io/",
+  "mainEntityOfPage": "https://p-gueguen.github.io/",
   "image": "https://p-gueguen.github.io/images/cd8_map.webp",
   "jobTitle": "Bioinformatics Scientist",
-  "description": "Computational biologist specializing in single-cell and spatial transcriptomics at the Functional Genomics Center Zurich (ETH / UZH).",
+  "description": "Bioinformatics scientist specializing in single-cell and spatial transcriptomics at the Functional Genomics Center Zurich (ETH / UZH).",
   "email": "mailto:paul.gueguen@fgcz.ethz.ch",
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "ORCID",
+    "value": "0000-0003-2930-6073",
+    "url": "https://orcid.org/0000-0003-2930-6073"
+  },
   "worksFor": {
     "@type": "Organization",
     "name": "Functional Genomics Center Zurich",
@@ -55,11 +64,21 @@
       {"@type": "CollegeOrUniversity", "name": "University of Zurich", "url": "https://www.uzh.ch"}
     ]
   },
+  "workLocation": {
+    "@type": "Place",
+    "address": {"@type": "PostalAddress", "addressLocality": "Zurich", "addressCountry": "CH"}
+  },
   "alumniOf": [
-    {"@type": "CollegeOrUniversity", "name": "Institut Curie", "url": "https://institut-curie.org"},
+    {"@type": "ResearchOrganization", "name": "Institut Curie", "url": "https://institut-curie.org"},
     {"@type": "CollegeOrUniversity", "name": "Université Paris Cité", "url": "https://u-paris.fr"},
     {"@type": "CollegeOrUniversity", "name": "Université de Lausanne", "url": "https://www.unil.ch"}
   ],
+  "hasCredential": {
+    "@type": "EducationalOccupationalCredential",
+    "credentialCategory": "degree",
+    "name": "PhD, Cancer Immunology",
+    "recognizedBy": {"@type": "CollegeOrUniversity", "name": "Université Paris Cité"}
+  },
   "knowsAbout": [
     "Single-cell RNA sequencing",
     "Spatial transcriptomics",
@@ -71,10 +90,13 @@
     "CAR-T cell therapy"
   ],
   "sameAs": [
+    "https://orcid.org/0000-0003-2930-6073",
+    "https://scholar.google.com/citations?user=srVHy-MAAAAJ",
     "https://github.com/p-gueguen",
-    "https://scholar.google.fr/citations?user=srVHy-MAAAAJ&hl=fr",
     "https://www.linkedin.com/in/paul-gueguen",
-    "https://orcid.org/0000-0003-2930-6073"
+    "https://www.researchgate.net/profile/Paul-Gueguen",
+    "https://fgcz.ch/the-center/people/gueguen.html",
+    "https://pypi.org/user/p-gueguen/"
   ]
 }
 </script>
@@ -88,12 +110,8 @@
   "codeRepository": "https://github.com/p-gueguen/rctd-py",
   "programmingLanguage": "Python",
   "runtimePlatform": "PyTorch",
-  "author": {
-    "@type": "Person",
-    "name": "Paul Gueguen",
-    "url": "https://p-gueguen.github.io/"
-  },
-  "license": "https://opensource.org/licenses/MIT",
+  "author": {"@id": "https://p-gueguen.github.io/#person"},
+  "license": "https://www.gnu.org/licenses/gpl-3.0.html",
   "keywords": "spatial transcriptomics, RCTD, deconvolution, Visium, Xenium, MERFISH, PyTorch, GPU"
 }
 </script>
@@ -287,6 +305,16 @@
   .pub .a { color: var(--muted); font-size: 0.85rem; line-height: 1.4; margin: 0; }
   .pub .a .me { color: var(--ink); font-weight: 500; }
 
+  .more-pubs-h { font-size: 0.95rem; font-weight: 600; margin: 2rem 0 0.25rem; padding-top: 1.25rem; border-top: 1px dashed var(--rule); }
+  .more-pubs { list-style: none; padding: 0; margin: 0; }
+  .more-pubs li { padding: 0.6rem 0; border-top: 1px dashed var(--rule); }
+  .more-pubs li:first-of-type { border-top: 0; }
+  .more-pubs .y { color: var(--muted); font-size: 0.8rem; letter-spacing: 0.02em; }
+  .more-pubs a { text-decoration: none; border-bottom: 1px solid var(--rule); }
+  .more-pubs a:hover { border-bottom-color: var(--accent); }
+  .more-pubs .a { color: var(--muted); font-size: 0.85rem; margin: 0.1rem 0 0; }
+  .more-pubs .a .me { color: var(--ink); font-weight: 500; }
+
   /* Experience */
   .cv { list-style: none; padding: 0; margin: 0; }
   .cv li {
@@ -336,14 +364,15 @@
 <header class="masthead">
   <div class="wrap">
     <h1 class="name">Paul Gueguen</h1>
-    <p class="role">Computational biologist at the <a href="https://fgcz.ch">Functional Genomics Center Zurich</a> (ETH / UZH).</p>
+    <p class="role">Bioinformatics scientist at the <a href="https://fgcz.ch">Functional Genomics Center Zurich</a> (ETH / UZH).</p>
     <nav class="top">
       <a href="#work">Work</a>
       <a href="#publications">Publications</a>
+      <a href="#talks">Talks</a>
       <a href="#cv">CV</a>
       <a href="mailto:paul.gueguen@fgcz.ethz.ch" rel="me">Email</a>
       <a href="https://github.com/p-gueguen" rel="me">GitHub</a>
-      <a href="https://scholar.google.fr/citations?user=srVHy-MAAAAJ&hl=fr" rel="me">Scholar</a>
+      <a href="https://scholar.google.com/citations?user=srVHy-MAAAAJ&hl=en" rel="me">Scholar</a>
       <a href="https://orcid.org/0000-0003-2930-6073" rel="me">ORCID</a>
       <a href="https://www.linkedin.com/in/paul-gueguen" rel="me">LinkedIn</a>
     </nav>
@@ -471,12 +500,52 @@
       </article>
 
     </div>
+
+    <h3 class="more-pubs-h">Recent collaborations at FGCZ</h3>
+    <ul class="more-pubs">
+      <li>
+        <div class="y">2026 &middot; bioRxiv</div>
+        <a href="https://doi.org/10.64898/2026.04.13.718113">KLRG1 identifies circulating cytotoxic CD4 T cells with selective anti-tumor function in human cancer</a>
+        <p class="a">Cenerenti M, &hellip; <span class="me">Gueguen P</span>, et&nbsp;al.</p>
+      </li>
+      <li>
+        <div class="y">2026 &middot; Stem Cells</div>
+        <a href="https://doi.org/10.1093/stmcls/sxaf074">Stem cell specification and niche formation in developing incisor require actomyosin forces</a>
+        <p class="a">Mohtadi Hamadani Y, Evers L, &hellip; <span class="me">Gueguen P</span>, &hellip; Balic A.</p>
+      </li>
+      <li>
+        <div class="y">2025 &middot; bioRxiv</div>
+        <a href="https://doi.org/10.1101/2025.08.15.669765">Missing data in single-cell transcriptomes reveals transcriptional shifts</a>
+        <p class="a">Chen R, Chung YC, &hellip; <span class="me">Gueguen P</span>, Sanin DE.</p>
+      </li>
+      <li>
+        <div class="y">2025 &middot; Liver International</div>
+        <a href="https://doi.org/10.1111/liv.70172">Analysis of hyperexpanded T-cell clones in SARS-CoV-2 vaccine-associated liver injury by spatial proteomics and transcriptomics</a>
+        <p class="a">Uzun S, Pant A, Bartoszek E, <span class="me">Gueguen P</span>, et&nbsp;al.</p>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<section id="talks">
+  <div class="wrap">
+    <h2><span class="n">03</span> Talks</h2>
+    <ul class="cv">
+      <li>
+        <div class="when">Nov 2024</div>
+        <div class="what">
+          <strong><a href="https://compbiozurich.org/news/2024/2024-11-07-zh-seminars-in-bioinformatics/">FGCZ Xenium implementation: practical insights and recommendations</a></strong><br>
+          <span class="where">Zurich Seminars in Bioinformatics &middot; UZH Irchel</span>
+          <p>Early evaluation of the 10x Xenium platform at FGCZ: multimodal segmentation, QC, tissue-quality effects, and a comparison with Visium HD.</p>
+        </div>
+      </li>
+    </ul>
   </div>
 </section>
 
 <section id="cv">
   <div class="wrap">
-    <h2><span class="n">03</span> CV</h2>
+    <h2><span class="n">04</span> CV</h2>
     <ul class="cv">
       <li>
         <div class="when">2024 &mdash;</div>
@@ -522,7 +591,7 @@
     <span>
       <a href="mailto:paul.gueguen@fgcz.ethz.ch" rel="me">Email</a> &middot;
       <a href="https://github.com/p-gueguen" rel="me">GitHub</a> &middot;
-      <a href="https://scholar.google.fr/citations?user=srVHy-MAAAAJ&hl=fr" rel="me">Scholar</a>
+      <a href="https://scholar.google.com/citations?user=srVHy-MAAAAJ&hl=en" rel="me">Scholar</a>
     </span>
   </div>
 </footer>
